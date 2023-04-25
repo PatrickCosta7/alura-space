@@ -1,44 +1,33 @@
-Menu.module.scss
+PaginaInicial.module.scss
 
+main {
+  margin: 0 24px;
+}
 
-.menu {
-  width: 18%;
+.principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
 
-  &__lista {
-    padding-left: 0.5rem;
-    margin: 0;
-    height: 276px;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  &__item {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    &:first-child {
-      a {
-        font-weight: 700;
-        color: #7b78e5;
-        font-family: "GandhiSansRegular";
-      }
+  &__imagem {
+    width: 88%;
+    img {
+      width: 100%;
+      height: 288px;
     }
-  }
 
-  img {
-    margin-right: 0.5rem;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-  }
+    position: relative;
 
-  a {
-    text-decoration: none;
-    font-size: 1.125rem;
-    color: #d9d9d9;
-    font-family: "GandhiSansRegular"
+    h1 {
+      position: absolute;
+      z-index: 1;
+      color: #d9d9d9;
+      font-size: 2.5rem;
+      width: 401px;
+      height: 144px;
+      top: 75px;
+      left: 44px;
+    }
   }
 }
