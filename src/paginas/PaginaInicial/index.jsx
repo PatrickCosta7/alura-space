@@ -2,6 +2,7 @@ import Banner from "./banner.png"
 import style from "./PaginaInicial.module.scss"
 import Cabecalho from "../../componentes/Cabecalho";
 import Menu from "../../componentes/Menu";
+import Rodape from "../../componentes/Rodape";
 
 
 export default function PaginaInicial(){
@@ -17,6 +18,7 @@ export default function PaginaInicial(){
                     </div>
                 </section>
             </main>
+            <Rodape />
 
         </>
     )

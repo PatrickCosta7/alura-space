@@ -1,33 +1,43 @@
 PaginaInicial.module.scss
 
-main {
-  margin: 0 24px;
+.galeria {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 17%;
+  margin-top: 1rem;
 }
 
-.principal {
+
+Tags.module.scss
+
+@import "../../styles/variaveis";
+
+.tags {
+  width: 65vw;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin-top: 2rem;
+  align-items: center;
+  color: $cor-do-texto;
+  font-family: $fonte-normal;
+  font-size: 16px;
 
-  &__imagem {
-    width: 88%;
-    img {
-      width: 100%;
-      height: 288px;
-    }
+  p {
+    font-size: 1.25rem;
+  }
 
-    position: relative;
+  &__lista {
+    list-style: none;
+    width: 380px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
 
-    h1 {
-      position: absolute;
-      z-index: 1;
-      color: #d9d9d9;
-      font-size: 2.5rem;
-      width: 401px;
-      height: 144px;
-      top: 75px;
-      left: 44px;
+    li {
+      background-color: $tag-color;
+      padding: 6px 10px;
+      border-radius: 8px;
+      cursor: pointer;
     }
   }
 }
