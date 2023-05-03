@@ -1,5 +1,5 @@
 import React from 'react'
-import Tags from '../Tags'
+import Tags from 'componentes/Tags'
 import styles from './Galeria.module.scss'
 import fotos from './fotos.json'
 import Cards from './Cards'
