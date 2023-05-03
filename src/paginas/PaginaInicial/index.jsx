@@ -4,6 +4,7 @@ import Cabecalho from "../../componentes/Cabecalho";
 import Menu from "../../componentes/Menu";
 import Rodape from "../../componentes/Rodape";
 import Galeria from "../../componentes/Galeria";
+import Populares from "../../componentes/Populares";
 
 
 export default function PaginaInicial(){
@@ -18,10 +19,12 @@ export default function PaginaInicial(){
                         <img src={Banner} alt="A imagem da terra vista do espaço" />
                     </div>
                 </section>
+            
+                <div className={style.galeria}>
+                    <Galeria />
+                    <Populares />
+                </div>
             </main>
-            <div className={style.galeria}>
-                <Galeria />
-            </div>
             <Rodape />
 
         </>
