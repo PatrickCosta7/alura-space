@@ -1,7 +1,8 @@
 import React from 'react'
 import styles from './Tags.module.scss'
+import Fotos from '../Galeria/fotos.json'
 
-export default function Tags({tags, filtrarFotos}) {
+export default function Tags({ tags, filtrarFotos, setItens }) {
   return (
     <div className={styles.tags}>
         <p>Filtre por tags:</p>
@@ -14,6 +15,7 @@ export default function Tags({tags, filtrarFotos}) {
                 >{tag}</li>
               ) 
             })}
+            <li onClick={() => setItens(Fotos)}>Todas</li>
         </ul>
     </div>
   )
